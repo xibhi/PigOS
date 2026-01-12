@@ -1,18 +1,5 @@
 #!/bin/bash
 
-cat <<"EOF"
-
- -------------------------------------------------
-__________.___  ________ ________    _________
-\______   \   |/  _____/ \_____  \  /   _____/
- |     ___/   /   \  ___  /   |   \ \_____  \ 
- |    |   |   \    \_\  \/    |    \/        \
- |____|   |___|\______  /\_______  /_______  /
-                      \/         \/        \/
--------------------------------------------------
-
-EOF
-
 # get the directory of the current script
 BASE_DIR=$(realpath "$(dirname "${BASH_SOURCE[0]}")")
 
@@ -21,6 +8,15 @@ source $BASE_DIR/scripts/helper.sh
 
 # trap for unexpected exits
 trap 'trap_message' INT TERM
+
+echo -e "${CYAN} -------------------------------------------------${NC}"
+echo -e "${CYAN}__________.___  ________ ________    _________${NC}"
+echo -e "${BLUE}\______   \   |/  _____/ \_____  \  /   _____/${NC}"
+echo -e "${BLUE} |     ___/   /   \  ___  /   |   \ \_____  \ ${NC}"
+echo -e "${MAGENTA} |    |   |   \    \_\  \/    |    \/        \ ${NC}"
+echo -e "${MAGENTA} |____|   |___|\______  /\_______  /_______  /${NC}"
+echo -e "${MAGENTA}                      \/         \/        \/${NC}"
+echo -e "${CYAN}-------------------------------------------------${NC}"
 
 # script start
 log_message "Installation started"
