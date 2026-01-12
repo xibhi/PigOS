@@ -12,7 +12,7 @@ print_info "\nStarting utilities setup..."
 run_command "pacman -S --noconfirm waybar" "Install Waybar - Status Bar" "yes"
 run_command "cp -r $BASE_DIR/configs/waybar /home/$SUDO_USER/.config/ && chown -R $SUDO_USER:$SUDO_USER /home/$SUDO_USER/.config/waybar" "Copy Waybar config" "yes"
 
-run_command "yay -S --sudoloop --noconfirm tofi" "Install Tofi - Application Launcher" "yes" "no"
+run_command "yay -S --sudoloop --noconfirm tofi-git" "Install Tofi - Application Launcher" "yes" "no"
 run_command "cp -r $BASE_DIR/configs/tofi /home/$SUDO_USER/.config/ && chown -R $SUDO_USER:$SUDO_USER /home/$SUDO_USER/.config/tofi" "Copy Tofi config(s)" "yes"
 
 run_command "pacman -S --noconfirm cliphist" "Install Cliphist - Clipboard Manager" "yes"
