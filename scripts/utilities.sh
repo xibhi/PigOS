@@ -18,7 +18,7 @@ run_command "cp -r $BASE_DIR/configs/tofi /home/$SUDO_USER/.config/" "Copy Tofi 
 run_command "pacman -S --noconfirm cliphist" "Install Cliphist - Clipboard Manager" "yes"
 
 run_command "yay -S --sudoloop --noconfirm swww" "Install SWWW for wallpaper management" "yes" "no"
-run_command "mkdir -p /home/$SUDO_USER/.config/assets/backgrounds && cp -r $BASE_DIR/configs/assets/backgrounds /home/$SUDO_USER/.config/assets/" "Copy sample wallpapers to assets directory (Recommended)" "yes" "no"
+run_command "bash -c 'mkdir -p \"/home/$SUDO_USER/.config/assets/backgrounds\" && cp -r \"$BASE_DIR/configs/assets/backgrounds\" \"/home/$SUDO_USER/.config/assets/\"'" "Copy sample wallpapers to assets directory (Recommended)" "yes" "no"
 
 run_command "yay -S --sudoloop --noconfirm hyprpicker" "Install Hyprpicker - Color Picker" "yes" "no"
 
