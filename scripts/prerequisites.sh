@@ -16,7 +16,7 @@ if command -v yay > /dev/null; then
 elif run_command "pacman -S --noconfirm --needed git base-devel" "Install YAY (Must)/Breaks the script" "yes"; then
 	run_command "bash -c 'cd /tmp && git clone https://aur.archlinux.org/yay-git.git /home/$SUDO_USER/yay-git && cd /home/$SUDO_USER/yay-git && makepkg --noconfirm -si'" "Clone and build YAY (Must)/Breaks the script" "no" "no" 
 fi
-run_command "pacman -S --noconfirm pipewire wireplumber pamixer brightnessctl" "Configuring audio and brightness (Recommended)" "yes"
+run_command "pacman -S --noconfirm pipewire pipewire-pulse wireplumber pamixer pavucontrol playerctl brightnessctl" "Configuring audio and brightness (Recommended)" "yes"
 
 run_command "pacman -S --noconfirm bluez bluez-utils blueman" "Configuring bluetooth services (Recommended)" "yes"
 run_command "systemctl enable bluetooth.service && systemctl start bluetooth.service" "Enable and start bluetooth services (Recommended)" "yes"
@@ -37,5 +37,11 @@ run_command "pacman -S --noconfirm kitty" "Install Kitty (Recommended)" "yes"
 run_command "pacman -S --noconfirm nano" "Install nano" "yes"
 
 run_command "pacman -S --noconfirm tar" "Install tar for extracting files (Must)/needed for copying themes" "yes"
+
+run_command "yay -S --sudoloop --noconfirm nautilus" "Install nautilus" "yes"
+
+run_command "pacman -S --noconfirm flatpak" "Install flatpak" "yes"
+
+run_command "flatpak install flathub io.github.kukuruzka165.materialgram -y" "Install Materialgram" "yes"
 
 echo "------------------------------------------------------------------------"
