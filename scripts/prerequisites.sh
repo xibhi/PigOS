@@ -44,4 +44,12 @@ run_command "pacman -S --noconfirm flatpak" "Install flatpak" "yes"
 
 run_command "flatpak install flathub io.github.kukuruzka165.materialgram -y" "Install Materialgram" "yes"
 
+run_command "pacman -S --noconfirm code-oss" "Install code-oss" "yes"
+
+run_command "yay -S --sudoloop --noconfirm spotify" "Install spotify" "yes"
+
+run_command "pacman -S --noconfirm discord" "Install discord" "yes"
+
+run_command "pacman -S --noconfirm fastfetch" "Install fastfetch" "yes"
+
 echo "------------------------------------------------------------------------"

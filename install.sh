@@ -32,6 +32,8 @@ check_os
 # run child scripts
 run_script "prerequisites.sh" "Prerequisites Setup"
 run_script "hyprland.sh" "Hyprland & Critical Softwares Setup"
+run_script "chmod +x scripts/fastfetch.sh" "Making fastfetch.sh executable"
+run_script "fastfetch.sh" "Fastfetch Setup"
 run_script "utilities.sh" "Basic Utilities & Configs Setup"
 run_script "final.sh" "Final Setup"
 
