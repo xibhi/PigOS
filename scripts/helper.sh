@@ -24,6 +24,11 @@ function trap_message {
   exit 1
 }
 
+# check for auto-confirm flag
+if [[ "$1" == "-y" || "$1" == "--yes" ]]; then
+  export NO_CONFIRM="true"
+fi
+
 # function to log messages
 function log_message {
   echo "$(date): $1" >> "$LOG_FILE"
@@ -52,6 +57,9 @@ function print_bold_blue {
 
 # function to ask for confirmation
 function ask_confirmation {
+  if [[ "$NO_CONFIRM" == "true" ]]; then
+    return 0
+  fi
   while true; do
     read -p "$(print_warning "$1 (y/n): ")" -n 1 -r
     echo

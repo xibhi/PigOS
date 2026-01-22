@@ -40,16 +40,19 @@ run_command "pacman -S --noconfirm tar" "Install tar for extracting files (Must)
 
 run_command "yay -S --sudoloop --noconfirm nautilus" "Install nautilus" "yes"
 
-run_command "pacman -S --noconfirm flatpak" "Install flatpak" "yes"
+run_command "yay -S --sudoloop --noconfirm tofi" "Install tofi" "yes"
 
-run_command "flatpak install flathub io.github.kukuruzka165.materialgram -y" "Install Materialgram" "yes"
+run_command "pacman -S --needed --noconfirm celluloid code obs-studio zed flatpak"
 
-run_command "pacman -S --noconfirm code-oss" "Install code-oss" "yes"
+run_command "yay -S --needed --noconfirm helium-browser-bin materialgram-bin equibop-bin zapzap"
 
-run_command "yay -S --sudoloop --noconfirm spotify" "Install spotify" "yes"
-
-run_command "pacman -S --noconfirm discord" "Install discord" "yes"
-
-run_command "pacman -S --noconfirm fastfetch" "Install fastfetch" "yes"
+run_command "flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+              flatpak install -y flathub \
+              org.gnome.Snapshot \
+              io.github.flattool.Warehouse \
+              com.github.tchx84.Flatseal \
+              hu.kramo.Cartridges \
+              org.gnome.Loupe \
+              io.gitlab.adhami3310.Impression"
 
 echo "------------------------------------------------------------------------"
