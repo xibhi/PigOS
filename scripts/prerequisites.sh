@@ -40,8 +40,6 @@ run_command "pacman -S --noconfirm tar" "Install tar for extracting files (Must)
 
 run_command "yay -S --sudoloop --noconfirm nautilus" "Install nautilus" "yes"
 
-run_command "yay -S --sudoloop --noconfirm tofi" "Install tofi" "yes"
-
 run_command "pacman -S --needed --noconfirm celluloid code obs-studio zed flatpak"
 
 run_command "yay -S --needed --noconfirm helium-browser-bin materialgram-bin equibop-bin zapzap"
