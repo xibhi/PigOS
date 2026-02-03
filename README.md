@@ -1,96 +1,107 @@
-# Hyprland Environment Configuration
+# 🐷 PigOS — Hyprland Desktop Environment
 
-A comprehensive installation and configuration setup for a complete Hyprland window manager environment on Arch Linux. This repository provides automated scripts to install and configure all essential components for a modern, tiling window manager setup.
+PigOS is a pre-configured, opinionated Hyprland desktop environment built on **Arch Linux**.  
+It focuses on speed, aesthetics, and a zero-friction daily workflow.
 
-## 📋 Table of Contents
+This repository provides automated scripts to install and configure everything you need for a polished Wayland setup using Hyprland. No hunting configs. No half-working rice. Just boot in and go.
+
+---
+
+## 📚 Table of Contents
 
 - [Overview](#overview)
+- [Showcase](#showcase)
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [What Gets Installed](#what-gets-installed)
-- [Configuration Files](#configuration-files)
+- [Configuration Layout](#configuration-layout)
 - [Post-Installation](#post-installation)
 - [Troubleshooting](#troubleshooting)
+- [Logs](#logs)
 - [Contributing](#contributing)
+- [License](#license)
 
-## 🎯 Overview
+---
 
-This repository automates the setup of a complete Hyprland environment, including:
-- Hyprland window manager with custom configuration
-- Essential system services (audio, network, bluetooth)
-- Status bar, launcher, and utility applications
-- Screen locker and session manager
-- Notification daemon
-- Terminal emulator with custom theme
-- Wallpaper management
-- Screenshot tools
-- And much more!
+## 🧠 Overview
+
+PigOS automates the setup of a complete Hyprland-based desktop, including:
+
+- A custom Hyprland configuration tuned for daily use  
+- A clean status bar, launcher, notifications, and lock screen  
+- Working audio, networking, Bluetooth, and display manager  
+- Pre-themed terminal, launcher, and UI components  
+- Sensible defaults with room to customize  
+
+If you want a modern Wayland desktop without spending days tweaking configs, PigOS is for you.
+
+---
 
 ## 🖼️ Showcase
 
-Here are some previews of the final Hyprland rice you’ll get with this setup:
+This is what PigOS looks like out of the box:
 
 <table>
   <tr>
-    <td>
-      <img src="assets/showcase/1.png" alt="Hyprland Showcase 1" width="350"/>
-    </td>
-    <td>
-      <img src="assets/showcase/2.png" alt="Hyprland Showcase 2" width="350"/>
-    </td>
+    <td><img src="assets/showcase/1.png" width="350"/></td>
+    <td><img src="assets/showcase/2.png" width="350"/></td>
   </tr>
   <tr>
-    <td>
-      <img src="assets/showcase/3.png" alt="Hyprland Showcase 3" width="350"/>
-    </td>
-    <td>
-      <img src="assets/showcase/4.png" alt="Hyprland Showcase 4" width="350"/>
-    </td>
+    <td><img src="assets/showcase/3.png" width="350"/></td>
+    <td><img src="assets/showcase/4.png" width="350"/></td>
   </tr>
 </table>
 
+---
 
-## ✨ Features
+## 🎁 Features
 
-### Core Components
-- **Hyprland** - Dynamic tiling Wayland compositor
-- **Waybar** - Highly customizable status bar
-- **Tofi** - Fast application launcher
-- **Kitty** - GPU-accelerated terminal emulator
-- **Dunst** - Lightweight notification daemon
+### Core Desktop
+- **Hyprland** — Wayland compositor and window manager  
+- **Waybar** — Status bar with custom modules  
+- **Tofi** — Fast app launcher  
+- **Kitty** — GPU-accelerated terminal  
+- **Dunst** — Notifications  
 
-### System Utilities
-- **Hyprlock** - Screen locker for Hyprland
-- **Hypridle** - Idle management daemon
-- **Wlogout** - Session manager with logout menu
-- **SWWW** - Wallpaper manager
-- **Grimblast** - Screenshot utility
-- **Hyprpicker** - Color picker tool
-- **Cliphist** - Clipboard manager
+### Utilities
+- **Hyprlock** — Screen locker  
+- **Hypridle** — Idle management  
+- **Wlogout** — Logout and power menu  
+- **SWWW** — Wallpaper daemon  
+- **Grimblast** — Screenshots  
+- **Hyprpicker** — Color picker  
+- **Cliphist** — Clipboard history  
 
 ### System Services
-- **Pipewire** - Audio server
-- **NetworkManager** - Network management
-- **Bluetooth** - Bluetooth support with GUI
-- **SDDM** - Display manager
+- **PipeWire** — Audio  
+- **NetworkManager** — Networking  
+- **Bluetooth** — With GUI tools  
+- **SDDM** — Display manager  
+
+Everything is wired together so it works immediately after login.
+
+---
 
 ## 🔧 Prerequisites
 
-Before running the installation script, ensure you have:
+Before installing PigOS, make sure you have:
 
-1. **Arch Linux** - This script is designed specifically for Arch Linux
-2. **Root/Sudo Access** - The installation script must be run as root
-3. **Internet Connection** - Required for downloading packages
-4. **Git** - For cloning the repository (if installing from source)
+1. Arch Linux (or an Arch-based system)  
+2. Sudo access  
+3. A working internet connection  
+4. Git installed  
+
+> This setup is designed for Arch. Other distros are not supported.
+
+---
 
 ## 🚀 Installation
 
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/M-SaaD-H/hyprland-environment.git
-cd hyprland-environment
+git clone https://github.com/xibhi/PigOS.git
+cd PigOS
 ```
 
 ### Step 2: Make the Script Executable
@@ -104,7 +115,7 @@ chmod +x install.sh
 **Important:** The script must be run as root:
 
 ```bash
-sudo ./install.sh
+sudo ./install.sh -y
 ```
 
 ### Step 4: Follow the Interactive Prompts
@@ -214,7 +225,7 @@ After installation completes:
 
 ### Getting Help
 
-- Check the [GitHub Issues](https://github.com/M-SaaD-H/hyprland-environment/issues) section
+- Check the [GitHub Issues](https://github.com/xibhi/PigOS/issues) section
 - Open a new issue if you can't find a solution
 - Review the [Hyprland Wiki](https://wiki.hyprland.org/) for configuration help
 
@@ -231,15 +242,15 @@ This log file contains:
 - User choices (accept/skip)
 - Error messages
 
-## 🤝 Contributing
+## 🫶🏻 Contributing
 
-Contributions are welcome! If you find this repository helpful, please consider:
+If PigOS helped you:
 
-- ⭐ Giving it a star on GitHub
-- 🐛 Reporting bugs or issues
-- 💡 Suggesting new features
-- 🔧 Submitting pull requests
-- 📖 Improving documentation
+- Star the repo
+- Report bugs
+- Suggest improvements
+- Open pull requests
+- Improve documentation
 
 Every contribution, big or small, is valuable to the community!
 
@@ -252,11 +263,11 @@ You are free to use, modify, and distribute this software under the terms of the
 
 ## 🔗 Links
 
-- **GitHub Repository**: https://github.com/M-SaaD-H/hyprland-environment
+- **GitHub Repository**: https://github.com/xibhi/PigOS
 - **Hyprland Wiki**: https://wiki.hyprland.org/
 - **Hyprland GitHub**: https://github.com/hyprwm/Hyprland
 
-## 🙏 Acknowledgments
+## ♥️ Acknowledgments
 
 - Hyprland developers and community
 - All the developers of the tools and utilities included in this setup
@@ -264,5 +275,4 @@ You are free to use, modify, and distribute this software under the terms of the
 
 ---
 
-**Enjoy your new Hyprland environment!** 🎉
-
+**Built for Humans, Approved by Pigs. 🐷**
