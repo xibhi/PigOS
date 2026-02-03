@@ -1,9 +1,13 @@
-# 🐷 PigOS — Hyprland Desktop Environment
+<p align="center">
+  <img src="assets/Logo/Icon.jpg" alt="PigOS Logo" width="180">
+</p>
 
-PigOS is a pre-configured, opinionated Hyprland desktop environment built on **Arch Linux**.  
-It focuses on speed, aesthetics, and a zero-friction daily workflow.
+<h1 align="center">🐷 PigOS — Hyprland Desktop Environment</h1>
 
-This repository provides automated scripts to install and configure everything you need for a polished Wayland setup using Hyprland. No hunting configs. No half-working rice. Just boot in and go.
+<p align="center">
+  PigOS is a pre-configured, opinionated Hyprland desktop environment built on **Arch Linux**. 
+  It focuses on speed, aesthetics, and a zero-friction daily workflow.
+</p>
 
 ---
 
