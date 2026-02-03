@@ -5,8 +5,7 @@
 <h1 align="center">🐷 PigOS — Hyprland Desktop Environment</h1>
 
 <p align="center">
-  PigOS is a pre-configured, opinionated Hyprland desktop environment built on **Arch Linux**. 
-  It focuses on speed, aesthetics, and a zero-friction daily workflow.
+PigOS is a thoughtfully crafted, opinionated Hyprland desktop environment built on Arch Linux. Designed with care, it blends speed, visual elegance, and a smooth, distraction-free workflow to make everyday use feel effortless and enjoyable.
 </p>
 
 ---
