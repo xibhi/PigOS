@@ -14,12 +14,14 @@ This repository provides automated scripts to install and configure everything y
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Configuration Layout](#configuration-layout)
+- [Configuration Files](#configuration-files)
 - [Post-Installation](#post-installation)
 - [Troubleshooting](#troubleshooting)
 - [Logs](#logs)
 - [Contributing](#contributing)
 - [License](#license)
+- [Links](#links)
+- [Acknowledgments](#acknowledgments)
 
 ---
 
