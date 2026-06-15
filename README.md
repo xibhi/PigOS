@@ -1,18 +1,12 @@
-<div align="center">
-  <img src="assets/Logo/Icon.jpg" alt="PigOS Logo" width="160"/>
+# PigOS
 
-  <h1>PigOS</h1>
-
-  An opinionated Hyprland desktop environment for Arch Linux. Built for Humans, Approved by Pigs.
-
-  [![Website](https://img.shields.io/badge/website-pigos.vercel.app-blue)](https://pigos.vercel.app)
-  [![Stars](https://img.shields.io/github/stars/xibhi/PigOS?style=social)](https://github.com/xibhi/PigOS/stargazers)
-  [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-</div>
+An opinionated Hyprland setup for Arch Linux. I built this to actually understand
+the stack — compositor, bar, launcher, locker, idle daemon, all of it — instead
+of just copying someone else's dotfiles and not knowing what half of it does.
 
 ---
 
-# Showcase
+# Screenshots
 
 <table>
   <tr>
@@ -27,7 +21,7 @@
 
 ---
 
-# Installation
+## Installation
 
 ```bash
 git clone https://github.com/xibhi/PigOS.git
@@ -35,35 +29,37 @@ cd PigOS
 chmod +x install.sh
 sudo ./install.sh
 ```
-After installation, reboot and select **Hyprland** from the SDDM login screen.
+
+Reboot. Select Hyprland from SDDM.
 
 ---
 
-# Features
+## Features
 
-- **Hyprland** — Wayland compositor and window manager  
-- **Waybar** — Status bar with custom modules  
-- **Tofi** — Fast app launcher  
-- **Kitty** — GPU-accelerated terminal  
-- **Dunst** — Notifications  
-- **Hyprlock** — Screen locker  
-- **Hypridle** — Idle management  
-- **Wlogout** — Logout and power menu  
-- **SWWW** — Wallpaper daemon  
-- **Grimblast** — Screenshots  
-- **Hyprpicker** — Color picker  
-- **Cliphist** — Clipboard history  
-- **PipeWire** — Audio  
-- **NetworkManager** — Networking  
-- **Bluetooth** — With GUI tools  
-- **SDDM** — Display manager  
+| Tool           | Role                                  |
+|----------------|---------------------------------------|
+| Hyprland       | Wayland compositor and window manager |
+| Waybar         | Status bar with custom modules        |
+| Tofi           | Fast app launcher                     |
+| Kitty          | GPU-accelerated terminal              |
+| Dunst          | Notifications                         |
+| Hyprlock       | Screen locker                         |
+| Hypridle       | Idle management                       |  
+| Wlogout        | Logout and power menu                 |  
+| SWWW           | Wallpaper daemon                      |
+| Grimblast      | Screenshots                           |
+| Hyprpicker     | Color picker                          |  
+| Cliphist       | Clipboard history                     |  
+| PipeWire       | Audio                                 |
+| NetworkManager | Networking                            |  
+| Bluetooth      | With GUI tools                        |
+| SDDM           | Display manager                       | 
 
 ---
 
-# Credits
+## Credits
 
-- [Sibhi Balamurugan](https://github.com/xibhi) — Creator
-- [Krish](https://github.com/Tokittoo) — Developer
-- [Hyprland](https://hyprland.org) — Community
-- [Arch Linux](https://archlinux.org) — Community
-- Everyone who built the tools included in this setup
+- [Sibhi Balamurugan](https://github.com/xibhi)
+- [Krish](https://github.com/Tokittoo)
+- Hyprland community
+- Arch community
